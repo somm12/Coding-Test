@@ -4,10 +4,10 @@ def reverse(x):
     result = 0 
     while x > 0:
         temp = x % 10
-        result += result * 10 + temp
+        result = result * 10 + temp
         x = x // 10
+    return result
 def isPrime(x):
-    result = 0
     if x == 1:
         return False
     for i in range(2,x//2+1):
