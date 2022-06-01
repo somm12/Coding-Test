@@ -13,4 +13,4 @@ for i in range(1, answer+ 1):
         numOfDivisor += 1
 print(numOfDivisor)
 
-# 숫자인지 아닌지 판별 isnumeric, isdigit, isdecimal
+# 숫자인지 아닌지 판별해주는 함수 isnumeric, isdigit, isdecimal
