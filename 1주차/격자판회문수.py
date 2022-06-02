@@ -8,7 +8,7 @@ for i in range(7):
             count += 1
         
         for k in range(2):
-            if board[i+4-k][j] != board[k][j]:
+            if board[j+4-k][i] != board[j][i]:
                 break
         else:
             count += 1
