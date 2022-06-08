@@ -22,4 +22,4 @@ for value in stack:
 # -m 번째 숫자 전까의 수를 출력한다.
 
 # number = list(map(int,str(number))) 이 부분은 숫자인 number를 str로 각 문자로 바꾸어 map을 이용해
-# 다시 모든 원쇠를 숫자로 변환한 리스트를 만든다.
+# 다시 모든 원쇠를 숫자로 변환한 리스트로 만든다.
