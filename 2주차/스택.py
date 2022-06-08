@@ -12,7 +12,8 @@ for value in number:
 if m != 0:
     stack = stack[:-m]
 
-print(stack)
+for value in stack:
+    print(value, end='')
 
 # 주어진 수 number에서 주어진 수 m개의 수를 제거할 때 가장 큰 수를 만들어야한다.
 # 여기서 포인트는 가장 큰 수를 만들어야하므로 앞자리수가 커야하고 => 숫자를 하나씩 읽어나갈 때 자기자신보다 
