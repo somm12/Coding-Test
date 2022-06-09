@@ -1,7 +1,3 @@
-
-from turtle import st
-
-
 arr = input()
 stack = []
 result = ""
