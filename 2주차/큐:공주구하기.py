@@ -13,6 +13,8 @@ while len(princeArr) != 1:
 
 print(princeArr[0])
 
+# arr = list(range(1,n+1)) 이런식으로도 list를 초기화 할 수 있음!
+
 # 큐는 FIFO(First In First Out)로 먼저 들어간 원소가 먼저 나오는 자료구조.
 # 파이썬에서는 deque라는 구조를 지원, 왼쪽과 오른쪽 모두에서 pop과 append를 할 수 있다.
 # 왼쪽에는 popleft, appendleft 기능, 오른쪽에는 리스트와 같은 pop과 append기능이 있다.
