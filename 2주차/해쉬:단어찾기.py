@@ -23,7 +23,7 @@ print(wordsInNote[0])
 # 나의 풀이
 # 두 배열에 각각 시에 쓰인 단어와 쓰일 단어를 초기화하고 for문 반복을 통해 wordsInPoem이 wordsInNote에
 # 존재한다면, wordsInNote에서 해당 단어의 index를 찾아서 pop한다. 마지막으로 담은 단어가 답이된다.
-# 이처럼 index 값과 value 즉 데이터 값 모두가 필요할 경우에는 딕셔너리를 써도 괜찮았을 것이다.
+
 
 n = int(input())
 poem = dict()
@@ -46,6 +46,7 @@ for key,val in poem.items():
 # 시에 사용된 단어가 입력되면 해당 key 값의 value를 0으로 할당.
 # for 반복문을 items() 딕셔너리 기능을 적용해서 key 값과 value를 동시에 활용하여 value가 1인 key 출력
 
-# 생각
+# 문제풀이 후 든 생각
+# 이처럼 index 값과 value 즉 데이터 값 모두가 필요할 경우에는 딕셔너리를 써도 괜찮았을 것이다.
 # for 반복문 사용은 좋지만 혹시 하나의 답을 바로 찾고 그 후의 반복은 필요하지 않다면 바로 break문을 사용
 # 하자. 불필요한 반복을 줄여서 연산시간을 줄일 수 있다.
