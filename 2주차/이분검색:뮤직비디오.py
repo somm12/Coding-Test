@@ -21,10 +21,11 @@ def Count(capacity):
             sum += x
     return cnt
 result = 21470000
+maxx = max(songLen)
 while lt <= rt:
     mid = (lt  + rt) // 2
  
-    if Count(mid) <= 3:
+    if maxx <= mid and Count(mid) <= 3:
         result = min(result,mid)
         rt = mid - 1
     else:
@@ -39,3 +40,4 @@ print(result)
 
 # Count함수를 구현할 때, 일단 더해보고, 수용제한량이 넘어서면 그 수를 다시 sum에 할당하면 그 다음수터 바로
 # 합을 구할 수 있게된다.
+# *** 최소한 길이가 가장 큰 곡의 길이가 DVD 용량이상이어야함!!!
