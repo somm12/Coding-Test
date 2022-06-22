@@ -1,29 +1,29 @@
-# def DFS(L):
-#     global cnt, res
-#     count = 0
-#     for i in res:
-#         if i > 0 :
-#             count += 1
-#     if count < m and L > n:
-#         return
-#     if count == m:
-#         for k in range(1,n+1):
-#             if res[k] > 0:
-#                 print(k, end=' ')
-#         cnt += 1
-#         print()
+def DFS(L):
+    global cnt, res
+    count = 0
+    for i in res:
+        if i > 0 :
+            count += 1
+    if count < m and L > n:
+        return
+    if count == m:
+        for k in range(1,n+1):
+            if res[k] > 0:
+                print(k, end=' ')
+        cnt += 1
+        print()
 
-#     else:
-#         res[L] = 1
-#         DFS(L+1)
-#         res[L] = 0
-#         DFS(L+1)
-# if __name__ == "__main__":
-#     n, m = map(int,input().split())
-#     res = [0] * (n+1)
-#     cnt = 0
-#     DFS(1)
-#     print(cnt)
+    else:
+        res[L] = 1
+        DFS(L+1)
+        res[L] = 0
+        DFS(L+1)
+if __name__ == "__main__":
+    n, m = map(int,input().split())
+    res = [0] * (n+1)
+    cnt = 0
+    DFS(1)
+    print(cnt)
 
 # 나의 풀이: 어떻게 문제를 풀지는 부분집합 구하기에서 응용을 하면 된다. 하지만 종료조건을 하나 더 찾는데 오래 걸렸다.
 # 조합은 순열과 다르게 1 2 , 2 1 이나 같은 답이다. 그래서 res배열로 체크하면서 원소가 1인 것의 개수가 m개 일 때 조합을 출력하는 방식으로 구현.
